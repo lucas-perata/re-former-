@@ -1,4 +1,4 @@
-<h1>Create your user!</h1>
+<h1>Edit your user!</h1>
 <%# 
 <% <form action="/users" method="post">
     <label for="username">Username:</label>
@@ -29,14 +29,6 @@
 <%= form.email_field :email, placeholder: "example@mail.com" %>
 <br>
 
-<%= form.label :password %> 
-<%= form.password_field :password, placeholder: "SaFePa$woRd" %>
-<br>
-<% @user.errors.full_messages_for(:password).each do |message| %>
-<div>
-<%= message %>
-</div>
-<% end %>
 
 <%= form.submit %>
 
